@@ -1,4 +1,4 @@
-package hexgrid
+package hex
 
 import "errors"
 
@@ -13,6 +13,14 @@ func NewHex(q, r, s int) (*hex, error) {
 		return nil, errors.New("q + r + s must be 0")
 	}
 	return &hex{q: q, r: r, s: s}, nil
+}
+
+// Math
+func Abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }
 
 // Equality
