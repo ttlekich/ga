@@ -11,3 +11,7 @@ func NewGame() *Game {
 		maxY: 100,
 	}
 }
+
+func (g *Game) circleDistribution(n int) {
+
+}

@@ -13,7 +13,7 @@ func main() {
 
 	server := api.NewServer(*port)
 
-	fmt.Println("server runnign on port: ", *port)
+	fmt.Println("listening on port: ", *port)
 
 	log.Fatal(server.Start())
 }
